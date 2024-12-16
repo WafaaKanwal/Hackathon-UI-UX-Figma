@@ -106,7 +106,7 @@ const CommentSection = () => {
        
       </div>
        {/* Button */}
-       <button className="bg-[#FB2E86] mt-10 text-white text-sm font-semibold py-3 px-[20rem] ml-4 rounded-sm hover:bg-pink-600 w-full sm:w-auto">
+       <button className="bg-[#FB2E86] mt-10 text-white text-sm font-semibold py-3 px-[20rem] ml-[70px] rounded-sm hover:bg-pink-600 w-[200px] sm:w-auto">
           Continue Shipping
         </button>
     </div>
