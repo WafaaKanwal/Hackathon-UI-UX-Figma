@@ -4,22 +4,22 @@ import Image from 'next/image';
 const OfferProductList = () => {
   const products = [
     {
-      image: '/images/29.JFIF',
+      image: '/images/29.png',
       name: 'Duis lectus est.',
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(1).JFIF',
+      image: '/imageS/29(1).png',
       name: 'Sed placerat.',
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(2).JFIF',
+      image: '/imageS/29(2).png',
       name: 'Netus proin.',
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(3).JFIF',
+      image: '/imageS/29(3).png',
       name: 'Platea in.',
       price: '$12.00 - $15.00',
     },
