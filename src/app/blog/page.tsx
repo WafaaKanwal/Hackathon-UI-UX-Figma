@@ -173,7 +173,7 @@ export default function Blog() {
           alt="Logo 5"
           width={500} 
            height={500}
-          className=" object-contain w-[50rem]"
+          className=" object-contain w-[55rem] ml-[55px]"
         />
       </div>
 

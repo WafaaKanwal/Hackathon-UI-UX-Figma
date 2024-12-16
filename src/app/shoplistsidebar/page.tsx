@@ -689,10 +689,25 @@ export default function SideBar() {
                   </div>
                 </div>
               </div>
+              
             </div>
+            
           </div>
         ))}
+        
       </div>
+      
+                    {/* Logos Section */}
+          <div className="absolute w-auto h-36 ml-36 mt-11 bg-white py-20 flex items-center justify-center gap-12">
+              <Image
+                src="/images/image 1174.png"
+                alt="Logo 5"
+                width={500} 
+                 height={500}
+                className=" object-contain w-[55rem] ml-[140px]"
+              />
+            </div>
+            <div className="h-20"> </div>
     </div>
   );
 }
