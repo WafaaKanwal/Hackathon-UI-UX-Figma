@@ -1,13 +1,5 @@
 import React from "react";
-import { Josefin_Sans } from "next/font/google"; // Use PascalCase for the font
 
-// Load the Josefin Sans font at the module scope
-const josefin = Josefin_Sans({
-  weight: ['400', '700'],
-  style: 'normal',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function Contact() {
   return (
@@ -15,7 +7,7 @@ export default function Contact() {
       {/* Rectangle Section */}
       <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[67px] font-[Josefin Sans]"
+          className="text-[#151875] font-bold ml-[283px] mt-[67px] "
           style={{
             fontSize: "36px",
             lineHeight: "25.78px",
@@ -26,7 +18,6 @@ export default function Contact() {
         <p
           className="mt-5 ml-[286px]"
           style={{
-            fontFamily: "Josefin Sans",
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "14.4px",
@@ -78,7 +69,7 @@ export default function Contact() {
               <label htmlFor="message" className="sr-only">Message</label>
               <textarea id="message" placeholder="Your message" className="mt-[15px] w-[480px] h-[166px] px-3 py-2 border rounded"></textarea>
             </div>
-            <button type="submit" className=" bg-[#FB2E86] font-josefinsans text-white px-5 py-2 rounded">Send Mail</button>
+            <button type="submit" className=" bg-[#FB2E86] text-white px-5 py-2 rounded">Send Mail</button>
           </form>
         </div>
 {/* Right Side: Contact Way */}
