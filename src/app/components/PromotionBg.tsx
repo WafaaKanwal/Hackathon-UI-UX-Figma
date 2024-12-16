@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import Image from 'next/image'
 const PromotionBg = () => {
   return (
     <>
@@ -7,9 +7,11 @@ const PromotionBg = () => {
 <div className="relative flex items-center justify-between px-6 ">
       {/* Hanging Light */}
       <div>
-      <img
+      <Image
         src="/images/light.png"
         alt="Hanging Light"
+        width={500} 
+              height={500}
         className="absolute top-0 left-[4.5rem] w-[315px] h-[315px]"
       />
       </div>
@@ -21,22 +23,28 @@ const PromotionBg = () => {
 
 
          {/* Background Circle 1 */}
-  <img
+  <Image
     src="/images/Ellipse 60.png"
     alt="Circle 1"
+    width={500} 
+              height={500}
     className="absolute top-[35px] left-[55.5rem] w-[520px] h-[520px] z-0"
   />
 
   {/* Background Circle 2 */}
-  <img
+  <Image
     src="/images/Ellipse 61.png"
     alt="Circle 2"
+    width={500} 
+              height={500}
     className="absolute top-[60px] left-[52.8rem] w-[520px] h-[520px] z-0"
   />
         {/* Sofa Image */}
-        <img
+        <Image
           src="/images/sofa.png"
           alt="Sofa"
+          width={500} 
+              height={500}
           className="w-[500px] h-[500px] absolute top-[80px] left-[53.5rem] z-10"
         //   className="w-[629px] h-[629px] mx-auto relative z-10"
         />
@@ -63,9 +71,11 @@ const PromotionBg = () => {
 
 
         <div className='z-20 text-black mr-[-1rem]'>
-        <img
+        <Image
           src="/images/Vector 14.png"
           alt="Sofa"
+          width={500} 
+              height={500}
           className="mb-[11rem] mr-[6rem] w-[118px] h-[118px]" />
           <p className='absolute bottom-[265px] ml-[1.7rem] flex flex-col text-[#ffffff]  leading-[2rem] text-3xl font-bold'>50% <span>&nbsp;&nbsp;off</span></p>
         </div>

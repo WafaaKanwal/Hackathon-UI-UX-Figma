@@ -113,9 +113,11 @@ const TrendingProducts = () => {
       </a>
     </div>
     <div className="ml-40 mt-[-2.5rem]">
-    <img
+    <Image
       src="/images/image15.png"
       alt="Clock"
+      width={500} 
+              height={500}
       className="w-48 h-48"
     /></div> 
         </div>
@@ -133,9 +135,11 @@ const TrendingProducts = () => {
           View Collection
       </a>
       <div className="ml-16 mt-1 ">
-    <img
+    <Image
       src="/images/image16.png"
       alt="Clock"
+      width={500} 
+              height={500}
       className="w-[16.5rem] h-[10rem] "
     /></div> 
     </div>
@@ -145,9 +149,11 @@ const TrendingProducts = () => {
            {/* Product 1 */}
      <div className="flex justify-left items-center">
      <div className="flex w-[6.5rem] items-center bg-[#F5F6F8] shadow-sm">
-      <img
+      <Image
         src="/images/image17.png"
         alt="Executive Seat Chair"
+        width={500} 
+              height={500}
         className="w-[5rem] h-[4.3rem] object-contain ml-3 "
       />
       </div>
@@ -160,9 +166,11 @@ const TrendingProducts = () => {
          {/* Product 2 */}
          <div className="flex justify-left items-center">
      <div className="flex w-[6.5rem] items-center bg-[#F5F6F8] shadow-sm">
-      <img
+      <Image
         src="/images/image18.png"
         alt="Executive Seat Chair"
+        width={500} 
+              height={500}
         className="w-[5rem] h-[4.3rem] object-contain ml-3 "
       />
       </div>
@@ -174,9 +182,11 @@ const TrendingProducts = () => {
         {/* Product 3 */}
         <div className="flex justify-left items-center">
      <div className="flex w-[6.5rem] items-center bg-[#F5F6F8] shadow-sm">
-      <img
+      <Image
         src="/images/image19.png"
         alt="Executive Seat Chair"
+        width={500} 
+              height={500}
         className="w-[5rem] h-[4.3rem] object-contain ml-3 "
       />
       </div>
@@ -196,94 +206,3 @@ const TrendingProducts = () => {
 };
 
 export default TrendingProducts;
-
-
-
-
-
-
-       
-  {/* Left Section */}
-  {/* <div className="border border-black w-10 h-10 flex flex-col gap-5 bg-[#FFF6FB] rounded-lg items-center justify-between"> */}
-    {/* <div className="mb-32 ">
-      <h2 className="text-[#151875] text-2xl font-bold mb-4 whitespace-nowrap">
-        23% off in all products
-      </h2>
-      <a
-        href="#"
-        className="text-[#FB4997] font-medium border-b border-[#FB4997]"
-      >
-        Shop Now
-      </a>
-    </div>
-    <div className="ml-[-1rem]">
-    <img
-      src="/images/image15.png"
-      alt="Clock"
-      className="w-5 h-5 object-contain"
-    /></div> */}
-  {/* </div> */}
-
-  {/* Middle Section */}
-  {/* <div className="border border-black w-10 h-10 bg-[#EEEFFB] rounded-lg flex items-center justify-between"> */}
-    {/* <div>
-      <h2 className="text-[#151875] text-2xl font-bold mb-4">
-        23% off in all products
-      </h2>
-      <a
-        href="#"
-        className="text-[#FB4997] font-bold underline hover:no-underline"
-      >
-        View Collection
-      </a>
-    </div>
-    <div>
-    <img
-      src="/images/image16.png"
-      alt="Shelf"
-      className="w-32 h-24 object-contain"
-    />
-    </div> */}
-  {/* </div> */}
-
-  {/* Right Section */}
-  {/* <div className="border border-black w-10 h-10 flex flex-col gap-6 "> */}
-    {/* Product 1 */}
-    {/* <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-      <img
-        src="/path/to/chair1-image.png"
-        alt="Executive Seat Chair"
-        className="w-16 h-16 object-contain mr-4"
-      />
-      <div>
-        <p className="text-[#151875] text-sm font-bold">Executive Seat Chair</p>
-        <p className="text-[#151875] text-sm">$32.00</p>
-      </div>
-    </div> */}
-
-    {/* Product 2 */}
-    {/* <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-      <img
-        src="/path/to/chair2-image.png"
-        alt="Executive Seat Chair"
-        className="w-16 h-16 object-contain mr-4"
-      />
-      <div>
-        <p className="text-[#151875] text-sm font-bold">Executive Seat Chair</p>
-        <p className="text-[#151875] text-sm">$32.00</p>
-      </div>
-    </div> */}
-
-    {/* Product 3 */}
-    {/* <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-      <img
-        src="/path/to/chair3-image.png"
-        alt="Executive Seat Chair"
-        className="w-16 h-16 object-contain mr-4"
-      />
-      <div>
-        <p className="text-[#151875] text-sm font-bold">Executive Seat Chair</p>
-        <p className="text-[#151875] text-sm">$32.00</p>
-      </div>
-    </div> */}
-  {/* </div> */}

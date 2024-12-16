@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ProductGrid = () => {
   const products = [
@@ -35,9 +36,11 @@ const ProductGrid = () => {
           <div key={index} className="text-center cursor-pointer">
             {/* Image */}
             <div>
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={500} 
+              height={500}
                 className="w-full h-60 object-cover rounded-md"
               />
             </div>

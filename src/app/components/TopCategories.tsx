@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const TopCategories = () => {
   return (
@@ -15,16 +16,19 @@ const TopCategories = () => {
 
     <div>
     {/* Chair Item 1 */}
-    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group">
+    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group cursor-pointer">
   {/* Purple Arc (Behind Entire Circle) */}
-  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] bg-[#762ad8] rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
+  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] rounded-full bg-[#7826f3] opacity-0 group-hover:opacity-80  transition-opacity duration-300 -z-10"></div>
+  {/* <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] bg-[#762ad8] rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div> */}
 
   {/* Main Circle */}
   <div className="relative bg-[#F6F7FB] rounded-full w-[14rem] h-[14rem] flex items-center justify-center shadow-custom">
     {/* Product Image */}
-    <img
+    <Image
       src="/images/image 20.png"
       alt="Mini LCW Chair"
+       width={500} 
+              height={500}
       className="w-[8rem] h-[8rem] object-contain"
     />
 
@@ -34,7 +38,7 @@ const TopCategories = () => {
     </button>
   </div>
 </div>
-<div className="text-center mt-6">
+<div className="text-center mt-6 cursor-pointer">
       <h3 className="text-[#151875] text-sm font-medium">Mini LCW Chair</h3>
       <p className="text-[#151875] text-sm">$56.00</p>
     </div>
@@ -43,16 +47,18 @@ const TopCategories = () => {
 
     {/* Chair Item 2 */}
 <div>
-    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group">
+    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group cursor-pointer">
   {/* Purple Arc (Behind Entire Circle) */}
-  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] bg-[#762ad8] rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
+  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] rounded-full  bg-[#7826f3] opacity-0 group-hover:opacity-80  transition-opacity duration-300 -z-10"></div>
 
   {/* Main Circle */}
   <div className="relative bg-[#F6F7FB] rounded-full w-[14rem] h-[14rem] flex items-center justify-center shadow-custom">
     {/* Product Image */}
-    <img
+    <Image
       src="/images/image 1168.png"
       alt="Mini LCW Chair"
+       width={500} 
+              height={500}
       className="w-[8rem] h-[8rem] object-contain"
     />
 
@@ -62,7 +68,7 @@ const TopCategories = () => {
     </button>
   </div>
 </div>
-<div className="text-center mt-6">
+<div className="text-center mt-6 cursor-pointer">
       <h3 className="text-[#151875] text-sm font-medium">Mini LCW Chair</h3>
       <p className="text-[#151875] text-sm">$56.00</p>
     </div>
@@ -70,16 +76,18 @@ const TopCategories = () => {
     
     {/* Chair Item 3 */}
     <div>
-    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group">
+    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group cursor-pointer">
   {/* Purple Arc (Behind Entire Circle) */}
-  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] bg-[#762ad8] rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
+  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] rounded-full  bg-[#7826f3] opacity-0 group-hover:opacity-80  transition-opacity duration-300 -z-10"></div>
 
   {/* Main Circle */}
   <div className="relative bg-[#F6F7FB] rounded-full w-[14rem] h-[14rem] flex items-center justify-center shadow-custom">
     {/* Product Image */}
-    <img
-      src="/images/image 1168.png"
+    <Image
+      src="/images/image11.png"
       alt="Mini LCW Chair"
+       width={500} 
+              height={500}
       className="w-[8rem] h-[8rem] object-contain"
     />
 
@@ -89,7 +97,7 @@ const TopCategories = () => {
     </button>
   </div>
 </div>
-<div className="text-center mt-6">
+<div className="text-center mt-6 cursor-pointer">
       <h3 className="text-[#151875] text-sm font-medium">Mini LCW Chair</h3>
       <p className="text-[#151875] text-sm">$56.00</p>
     </div>
@@ -98,16 +106,18 @@ const TopCategories = () => {
 
     {/* Chair Item 4 */}
     <div>
-    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group">
+    <div className="relative w-[14rem] h-[14rem] flex items-center justify-center group cursor-pointer">
   {/* Purple Arc (Behind Entire Circle) */}
-  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] bg-[#762ad8] rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
+  <div className="absolute inset-0 w-[14.2rem] h-[14.2rem] mt-1 ml-[-.5rem] rounded-full  bg-[#7826f3] opacity-0 group-hover:opacity-80  transition-opacity duration-300 -z-10"></div>
 
   {/* Main Circle */}
   <div className="relative bg-[#F6F7FB] rounded-full w-[14rem] h-[14rem] flex items-center justify-center shadow-custom">
     {/* Product Image */}
-    <img
-      src="/images/image 1168.png"
+    <Image
+      src="/images/image 20.png"
       alt="Mini LCW Chair"
+      width={500} 
+              height={500}
       className="w-[8rem] h-[8rem] object-contain"
     />
 
@@ -117,7 +127,7 @@ const TopCategories = () => {
     </button>
   </div>
 </div>
-<div className="text-center mt-6">
+<div className="text-center mt-6 cursor-pointer">
       <h3 className="text-[#151875] text-sm font-medium">Mini LCW Chair</h3>
       <p className="text-[#151875] text-sm">$56.00</p>
     </div>

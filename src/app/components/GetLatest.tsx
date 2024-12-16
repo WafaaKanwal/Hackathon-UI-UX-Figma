@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const GetLatest: React.FC = () => {
   return (
@@ -20,10 +21,12 @@ const GetLatest: React.FC = () => {
 
     {/* Logos Section */}
     <div className="absolute w-full bg-white py-6 flex items-center justify-center gap-12">
-        <img
+        <Image
           src="/images/image 1174.png"
           alt="Logo 5"
-          className=" object-contain"
+          width={500} 
+          height={500}
+          className=" object-contain w-[55rem]"
         />
       </div>
 

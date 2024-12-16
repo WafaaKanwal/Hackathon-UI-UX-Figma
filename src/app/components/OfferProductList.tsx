@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const OfferProductList = () => {
   const products = [
@@ -33,9 +34,11 @@ const OfferProductList = () => {
         {products.map((product, index) => (
           <li key={index} className="text-center cursor-pointer w-[126px]">
             <div className="flex items-center justify-center mb-3">
-              <img
+              <Image
                 src={product.image}
                 alt="img"
+                width={500} 
+              height={500}
                 style={{ width: '126px', height: '80px', objectFit: 'cover' }}
               />
             </div>
