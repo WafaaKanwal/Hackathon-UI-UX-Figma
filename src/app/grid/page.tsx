@@ -1,15 +1,5 @@
 import Image from "next/image";
 
-import { Josefin_Sans } from "next/font/google"; // Use PascalCase for the font
-
-// Load the Josefin Sans font at the module scope
-const josefin = Josefin_Sans({
-  weight: ['400', '700'],
-  style: 'normal',
-  subsets: ['latin'],
-  display: 'swap',
-});
-
 export default function Products() {
   const products = [
     {
@@ -101,7 +91,7 @@ export default function Products() {
   return (
     <div className="min-h-screen py-10">
       {/* Rectangle Section */}
-      <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
+      <div className="absolute mt-[-44px] left-0 w-full h-[220px] bg-[#F6F5FF]">
         <h1
           className="text-[#151875] font-bold ml-[279px] mt-[67px] font-"
           style={{
@@ -114,7 +104,6 @@ export default function Products() {
         <p
           className="mt-5 ml-[282px]"
           style={{
-            fontFamily: "Josefin Sans",
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "14.4px",
@@ -132,7 +121,6 @@ export default function Products() {
           <h2
             className="text-[#151875] font-bold whitespace-nowrap"
             style={{
-              fontFamily: "Josefin Sans",
               fontSize: "22px",
               lineHeight: "25.78px",
             }}
@@ -154,75 +142,109 @@ export default function Products() {
         </div>
 
         {/* Sort by and Per Page Section */}
-        <div className="w-[5%] text-gray-300 whitespace-nowrap mr-[650px] mt-11 ml-[200px]">
-          <div className="flex items-center  gap-4 mr-[100px]">
-            {/* Per Page: */}
-            <div className="flex items-center">
-              <label
-                htmlFor="per-page"
-                className="mr-2 text-[#3F509E] text-sm font-medium "
-              >
-                Per Page:
-              </label>
-              <input
-                type="number"
-                id="per-page"
-                name="per-page"
-                className="w-[55px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
-              />
-            </div>
+        <div className=" w-[20px] whitespace-nowrap flex items-center gap-4 mr-[210px]">
+          {/* Per Page */}
+          <div className="ml-[-380px] flex items-center">
+            <label
+              htmlFor="per-page"
+              className="mr-2 text-[#3F509E] text-sm font-medium"
+            >
+              Per Page:
+            </label>
+            <input
+              type="number"
+              id="per-page"
+              name="per-page"
+              className="w-[55px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
+            />
+          </div>
 
-            {/* Sort By: */}
-            <div className="flex items-center">
-              <label
-                htmlFor="sort-by"
-                className="mr-2 text-sm font-medium text-[#3F509E]"
-              >
-                Sort By:
-              </label>
-              <select
-                id="sort-by"
-                name="sort-by"
-                className="border  border-[#E7E6EF] w-[110px] h-[25px] p-1 text-sm"
-              >
-                <option value="relevance" className="text-gray-400">
-                  Best Match
-                </option>
-                <option value="price-low-high">Price: Low to High</option>
-                <option value="price-high-low">Price: High to Low</option>
-              </select>
-            </div>
+          {/* Sort By */}
+          <div className="flex items-center">
+            <label
+              htmlFor="sort-by"
+              className="mr-2 text-sm font-medium text-[#3F509E]"
+            >
+              Sort By:
+            </label>
+            <select
+              id="sort-by"
+              name="sort-by"
+              className="border border-[#E7E6EF] w-[110px] h-[25px] p-1 text-sm"
+            >
+              <option value="relevance">Best Match</option>
+              <option value="price-low-high">Price: Low to High</option>
+              <option value="price-high-low">Price: High to Low</option>
+            </select>
+          </div>
 
-            {/* View: */}
-            <div className="flex items-center ">
-              <label
-                htmlFor="view"
-                className="mr-2 text-sm font-medium text-[#3F509E]"
+          {/* View */}
+          <div className="flex items-center">
+            <label
+              htmlFor="view"
+              className="mr-2 text-sm font-medium text-[#3F509E]"
+            >
+              View:
+            </label>
+            <div className="flex gap-4">
+              {/* Grid View Icon (4 boxes) */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-[#3F509E] hover:text-blue-500 cursor-pointer"
+                fill="currentColor"
+                viewBox="0 0 24 24"
               >
-                View:
-              </label>
+                <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="13" width="8" height="8" rx="1"></rect>
+              </svg>
 
-              <div className="flex gap-4">
-                <Image
-                  src="/images/v1.png"
-                  alt="Grid View"
-                  width={17}
-                  height={16}
-                />
-                <Image
-                  src="/images/v2.png"
-                  alt="List View"
-                  width={17}
-                  height={16}
-                />
-              </div>
-              <input
-                type="text"
-                id="view"
-                name="view"
-                className="w-[132px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
-              />
+              {/* List View Icon (Boxes Filled) */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 ml-[-15px] text-[#3F509E] hover:text-blue-500 cursor-pointer"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {/* Three filled boxes */}
+                <rect x="3" y="5" width="4" height="4" rx="1"></rect>
+                <rect x="3" y="11" width="4" height="4" rx="1"></rect>
+                <rect x="3" y="17" width="4" height="4" rx="1"></rect>
+
+                {/* Three lines */}
+                <line
+                  x1="10"
+                  y1="7"
+                  x2="21"
+                  y2="7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                ></line>
+                <line
+                  x1="10"
+                  y1="13"
+                  x2="21"
+                  y2="13"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                ></line>
+                <line
+                  x1="10"
+                  y1="19"
+                  x2="21"
+                  y2="19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                ></line>
+              </svg>
             </div>
+            <input
+              type="number"
+              id="per-page"
+              name="per-page"
+              className="ml-[14px] w-[115px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
+            />
           </div>
         </div>
       </div>
