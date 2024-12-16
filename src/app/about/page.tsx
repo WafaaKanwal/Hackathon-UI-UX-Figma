@@ -1,15 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import aboutImage from "/public/images/c1.png";
-import { Josefin_Sans } from "next/font/google";
-
-// Load the Josefin Sans font at the module scope
-const josefin = Josefin_Sans({
-  weight: ['400', '700'],
-  style: 'normal',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function About() {
   return (
@@ -17,7 +8,7 @@ export default function About() {
       {/* Rectangle Section */}
       <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[67px] font-Josefin Sans"
+          className="text-[#151875] font-bold ml-[283px] mt-[67px] "
           style={{
             fontSize: "36px",
             lineHeight: "25.78px",
@@ -28,7 +19,6 @@ export default function About() {
         <p
           className="mt-5 ml-[286px]"
           style={{
-            fontFamily: "Josefin Sans",
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "14.4px",
@@ -54,14 +44,14 @@ export default function About() {
 
         {/* Right Column: Text and Button */}
         <div className="w-1/2 flex flex-col justify-center ml-[-70px]">
-          <h2 className="text-[#151875] font-[Josefin Sans] mt-[-30px] text-[30px] font-bold mb-4">
+          <h2 className="text-[#151875] mt-[-30px] text-[30px] font-bold mb-4">
             Know About Our Ecommerce <br /> Business, History
           </h2>
           <p className="text-[#8A8FB9] mb-6 font-lato text-[14px] leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, <br /> quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo.
+            eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <br /> quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo.
           </p>
           <button className="bg-[#FB2E86] mt-[40px] text-white py-3 px-6 rounded-md hover:bg-[#e42a75] transition w-[150px]">
             Contact Us
@@ -90,7 +80,14 @@ export default function About() {
                 />
               </div>
               <h3 className="text-[#151875] text-lg font-semibold mb-2">
-                {["Fast Delivery", "Cash Back", "Quality Product", "24/7 Support"][i]}
+                {
+                  [
+                    "Fast Delivery",
+                    "Cash Back",
+                    "Quality Product",
+                    "24/7 Support",
+                  ][i]
+                }
               </h3>
               <p className="text-[#8A8FB9] text-sm">
                 {
@@ -109,7 +106,9 @@ export default function About() {
 
       {/* Our Client Say Section */}
       <div className="mt-[100px] w-full bg-[#F6F5FF] py-16 px-20 text-center">
-        <h2 className="text-[#151875] text-3xl font-bold mb-8">Our Client Say!</h2>
+        <h2 className="text-[#151875] text-3xl font-bold mb-8">
+          Our Client Say!
+        </h2>
         <div className="flex flex-col items-center">
           {/* Client Image */}
           <Image
@@ -117,16 +116,21 @@ export default function About() {
             alt="Client"
             width={160}
             height={160}
-            className=" shadow-lg mb-4"
+            className="shadow-lg mb-4"
           />
           {/* Client Name */}
-          <h3 className="text-[#151875] text-lg font-lato font-semibold">Salena Gomez</h3>
-          <h4 className="text-[#8A8FB9] text-sm mt-[-19] font-lato text-[10px]">Ceo At Webecy Digital</h4>
+          <h3 className="text-[#151875] text-lg font-lato font-semibold">
+            Salena Gomez
+          </h3>
+          <h4 className="text-[#8A8FB9] text-sm mt-[-19] font-lato text-[10px]">
+            Ceo At Webecy Digital
+          </h4>
           {/* Client Description */}
           <p className="text-[#8A8FB9] text-sm mt-4 max-w-2xl">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua. It has
-            been an absolute pleasure working with this team!"
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut <br /> eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. It has been an absolute pleasure
+            working with this team!
           </p>
         </div>
       </div>

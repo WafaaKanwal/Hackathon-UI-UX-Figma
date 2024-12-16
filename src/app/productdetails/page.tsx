@@ -48,7 +48,7 @@ export default function ProductDetails() {
               Color:
             </span>
           </div>
-          <p className="mb-4 mt-1 text-[14px] font-josefin text-[#A9ACC6]">
+          <p className="mb-4 mt-1 text-[14px]  text-[#A9ACC6]">
             A beautiful playwood arm chair that adds a touch of <br />
             elegance and comfort to any room.
           </p>
@@ -220,7 +220,7 @@ export default function ProductDetails() {
               <h2 className="text-[14px] ml-[-17px] font-semibold">
                 Mens Fashion Wear
               </h2>
-              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] font-josefin ">
+              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px]  ">
                 $25.00
               </p>
               <div className="ml-[147px] absolute mt-[-24px]">
@@ -243,7 +243,7 @@ export default function ProductDetails() {
               <h2 className="text-[14px] ml-[-17px] font-semibold">
                 Women’s Fashion
               </h2>
-              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] font-josefin ">
+              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] ">
                 $28.00
               </p>
               <div className="ml-[150px] absolute mt-[-24px]">
@@ -266,7 +266,7 @@ export default function ProductDetails() {
               <h2 className="text-[14px] ml-[-17px] font-semibold">
                 Wolx Dummy Fashion{" "}
               </h2>
-              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] font-josefin ">
+              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] ">
                 $30.00
               </p>
               <div className="ml-[150px] absolute mt-[-24px]">
@@ -289,7 +289,7 @@ export default function ProductDetails() {
               <h2 className="text-[14px] ml-[-17px] font-semibold">
                 Top Wall Digital Clock
               </h2>
-              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] font-josefin ">
+              <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px]  ">
                 $35.00
               </p>
               <div className="ml-[150px] absolute mt-[-24px]">

@@ -1,6 +1,6 @@
-
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export default function Cart() {
   return (
@@ -40,9 +40,11 @@ export default function Cart() {
           <div className="ml-[-120px] font-semibold text-[20px]">Total</div>
           {/* Row 1 */}
           <div className="flex items-center mt-11">
-            <img
+            <Image
               src="/images/cc1.png"
               alt="Product 1"
+              width={500} 
+              height={500}
               className="w-[83px] h-[87px] object-cover rounded mr-4"
             />
             {/* Cancel Icon */}
@@ -67,9 +69,11 @@ export default function Cart() {
           <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
           {/* Row 2 */}
           <div className="flex items-center">
-            <img
+            <Image
               src="/images/c2.png"
               alt="Product 2"
+              width={500} 
+              height={500}
               className="w-[83px] h-[87px] object-cover rounded mr-4"
             />
             {/* Cancel Icon */}
@@ -94,9 +98,11 @@ export default function Cart() {
           <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
           {/* Row 3 */}
           <div className="flex items-center">
-            <img
+            <Image
               src="/images/c3.png"
               alt="Product 3"
+              width={500} 
+              height={500}
               className="w-[83px] h-[87px] object-cover rounded mr-4"
             />
             {/* Cancel Icon */}
@@ -121,9 +127,11 @@ export default function Cart() {
           <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
           {/* Row 4 */}
           <div className="flex items-center">
-            <img
+            <Image
               src="/images/c4.png"
               alt="Product 4"
+              width={500} 
+              height={500}
               className="w-[83px] h-[87px] object-cover rounded mr-4"
             />
             {/* Cancel Icon */}
@@ -148,9 +156,11 @@ export default function Cart() {
           <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
           {/* Row 5 */}
           <div className="flex items-center">
-            <img
+            <Image
               src="/images/c5.png"
               alt="Product 5"
+              width={500} 
+              height={500}
               className="w-[83px] h-[87px] object-cover rounded mr-4"
             />
             {/* Cancel Icon */}
@@ -208,11 +218,9 @@ export default function Cart() {
                   </p>
                 </div>
               </div>
-<Link href="/orderplaced">
-              <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
+              <Link href="/orderplaced"><button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
                 Proceed To Checkout
-              </button>
-              </Link>
+              </button></Link>
             </div>
           </div>
 

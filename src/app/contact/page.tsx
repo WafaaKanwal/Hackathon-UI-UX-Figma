@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 
 export default function Contact() {
@@ -110,7 +111,8 @@ export default function Contact() {
 
           {/* Image Below Contact Way Section */}
           <div className="mt-[100px] ml-[-60px] w-[550px] flex justify-center">
-            <img src="/images/contact.png" alt="Contact Us" className="w-[750px] rounded-lg" />
+            <Image src="/images/contact.png" alt="Contact Us"  width={500} 
+              height={500} className="w-[750px] rounded-lg" />
           </div>
         </div>
       </div>

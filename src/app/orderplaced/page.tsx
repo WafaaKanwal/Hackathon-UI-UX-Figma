@@ -31,27 +31,33 @@ export default function Order() {
       {/* Images Section */}
       <div className="absolute left-1/2 transform flex mt-[230px] space-x-4">
         {/* First Image */}
-        <img
+        <Image
           src="/images/tick.png"
           alt="Step 1"
+          width={500} 
+              height={500}
           className="w-[120px] ml-[-40px] h-[80px] rounded-full object-cover z-10"
         />
       </div>
 
       {/* Additional Image Section */}
       <div className="absolute top-[300px] ml-[274px]">
-        <img
+        <Image
           src="/images/clock 1.png"
           alt="Additional"
+          width={500} 
+              height={500}
           className="w-[70px] h-[70px]"
         />
       </div>
 
       {/* Additional Image Section2 */}
       <div className="absolute mt-[510px] ml-[1199px]">
-        <img
+        <Image
           src="/images/checklist 1.png"
           alt="2"
+          width={500} 
+              height={500}
           className="w-[70px] h-[70px]"
         />
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaSearchPlus } from "react-icons/fa";
@@ -592,9 +593,11 @@ export default function SideBar() {
           >
             {/* Left Image */}
             <div className="w-[30%] h-full">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={500} 
+              height={500}
                 className="w-full h-full object-cover"
               />
             </div>

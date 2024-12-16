@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaSearchPlus } from "react-icons/fa";
-import { Grid, List } from "lucide-react";
+
 
 import Link from "next/link";
 export default function ShopList() {
@@ -249,9 +249,11 @@ export default function ShopList() {
           >
             {/* Left Image */}
             <div className="w-[313px] h-[217px]">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={500} 
+              height={500}
                 className="w-full h-full object-cover "
               />
             </div>

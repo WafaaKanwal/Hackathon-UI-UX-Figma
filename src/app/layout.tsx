@@ -4,6 +4,16 @@ import "./globals.css";
 import HeadingBar from "./components/HeadingBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Josefin_Sans } from "next/font/google"; 
+
+// Load the Josefin Sans font at the module scope
+const josefin = Josefin_Sans({
+  weight: ['400', '700'],
+  style: 'normal',
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={josefin.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -6,9 +6,9 @@ export default function Faq() {
   return (
     <div className="min-h-screen py-10 relative">
       {/* Rectangle Section */}
-      <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
+      <div className="absolute mt-[-34px] left-0 w-full h-[200px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[67px] font-[Josefin Sans]"
+          className="text-[#151875] font-bold ml-[283px] mt-[67px] "
           style={{
             fontSize: "36px",
             lineHeight: "25.78px",
@@ -19,7 +19,6 @@ export default function Faq() {
         <p
           className="mt-5 ml-[286px]"
           style={{
-            fontFamily: "Josefin Sans",
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "14.4px",
@@ -43,8 +42,8 @@ export default function Faq() {
                 What is your return policy?
               </h3>
               <p className="text-[#8A8FB9] ml-[220px] text-[14px] mt-5 font-lato">
-                If 30 days have gone by since your purchase, unfortunately, <br /> we can not
-                offer you a refund or exchange.
+                If 30 days have gone by since your purchase, unfortunately,{" "}
+                <br /> we can not offer you a refund or exchange.
               </p>
             </div>
             <div>
@@ -52,8 +51,8 @@ export default function Faq() {
                 Do you offer international shipping?
               </h3>
               <p className="text-[#8A8FB9] ml-[220px] text-[14px] mt-5 font-lato">
-                Yes, we ship internationally. Shipping costs will vary depending <br /> on your
-                location and the size of your order.
+                Yes, we ship internationally. Shipping costs will vary depending{" "}
+                <br /> on your location and the size of your order.
               </p>
             </div>
             <div>
@@ -61,8 +60,8 @@ export default function Faq() {
                 How can I track my order?
               </h3>
               <p className="text-[#8A8FB9] ml-[220px] text-[14px] mt-5 font-lato">
-                Once your order is shipped, you will receive a tracking number <br /> via email.
-                You can use this to check the order status.
+                Once your order is shipped, you will receive a tracking number{" "}
+                <br /> via email. You can use this to check the order status.
               </p>
             </div>
             <div>
@@ -70,7 +69,8 @@ export default function Faq() {
                 What payment methods do you accept?
               </h3>
               <p className="text-[#8A8FB9] ml-[220px] text-[14px] mt-5 font-lato">
-                We accept all major credit cards, PayPal, and Apple Pay. You can choose <br />
+                We accept all major credit cards, PayPal, and Apple Pay. You can
+                choose <br />
                 your preferred payment method during the checkout process.
               </p>
             </div>
@@ -79,7 +79,9 @@ export default function Faq() {
 
         {/* Right Column: Ask a Question Form */}
         <div className="mt-[70px] ml-[-51px] w-[500px] bg-[#F6F5FF] p-8 rounded-lg shadow-md">
-          <h2 className="text-[#151875] text-2xl font-bold mb-6">Ask a Question</h2>
+          <h2 className="text-[#151875] text-2xl font-bold mb-6">
+            Ask a Question
+          </h2>
           <form className="space-y-6">
             <input
               type="text"
@@ -106,7 +108,7 @@ export default function Faq() {
       </div>
 
       {/* Image Section */}
-      <div className="mt-20 flex justify-center">
+      <div className="mt-24 mb-[-21px] flex justify-center">
         <Image
           src={faqImage}
           alt="FAQ Section Illustration"
