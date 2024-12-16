@@ -1,31 +1,14 @@
-'use client'
-import React, { useState } from "react";
+
+import Link from "next/link";
+import React from "react";
 
 export default function Cart() {
-  const [quantities, setQuantities] = useState([1, 1, 1, 1, 1]); // State to manage quantities of each product
-
-  // Function to increase quantity
-  const increaseQuantity = (index: number) => {
-    const newQuantities = [...quantities];
-    newQuantities[index]++;
-    setQuantities(newQuantities);
-  };
-
-  // Function to decrease quantity
-  const decreaseQuantity = (index: number) => {
-    const newQuantities = [...quantities];
-    if (newQuantities[index] > 1) {
-      newQuantities[index]--;
-      setQuantities(newQuantities);
-    }
-  };
-
   return (
-    <div className="min-h-screen py-10 relative">
+    <div>
       {/* Rectangle Section */}
-      <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
+      <div className="absolute mt-[-304px] left-0 w-full h-[220px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[67px] font-[Josefin Sans]"
+          className="text-[#151875] font-bold ml-[279px] mt-[67px] font-"
           style={{
             fontSize: "36px",
             lineHeight: "25.78px",
@@ -34,9 +17,8 @@ export default function Cart() {
           Shopping Cart
         </h1>
         <p
-          className="mt-5 ml-[286px]"
+          className="mt-5 ml-[282px]"
           style={{
-            fontFamily: "Josefin Sans",
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "14.4px",
@@ -47,148 +29,230 @@ export default function Cart() {
         </p>
       </div>
 
-      {/* Main Content Section */}
-      <div className="relative mt-[150px] ml-[180px] flex gap-10">
-        {/* Left Column: Cart Items */}
-        <div className="w-3/5 ml-[100px] mt-[140px]">
-        
-          <ul className="space-y-4">
-            {/* Cart Item 1 */}
-            <li className=" grid grid-cols-7 gap-4">
-              <span className="text-[#151875] font-semibold">Product</span>
-              <span className="text-[#151875] font-semibold">Price</span>
-              <span className="text-[#151875] font-semibold">Quantity</span>
-              <span className="text-[#151875] font-semibold">Color</span>
-              <span className="text-[#151875] font-semibold">Size</span>
-              <span className="text-[#151875] font-semibold">Total</span>
-            </li>
-            <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-            {/* Cart Item 2 */}
-            <li className="grid grid-cols-7 gap-4">
-              <span className="flex items-center gap-4">
-                <img src="/images/p1.png" alt="Product 1" className="w-12 h-12" />
-                <span>Product 1</span>
-              </span>
-              <span className="text-[#8A8FB9]">$50</span>
-              <span className="flex items-center gap-2">
-                <button onClick={() => decreaseQuantity(0)} className="text-[#FB2E86]">-</button>
-                <span>{quantities[0]}</span>
-                <button onClick={() => increaseQuantity(0)} className="text-[#FB2E86]">+</button>
-              </span>
-              <span className="text-[#8A8FB9]">Red</span>
-              <span className="text-[#8A8FB9]">L</span>
-              <span className="text-[#8A8FB9]">$50</span>
-            </li>
-            <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-            {/* Cart Item 3 */}
-            <li className="grid grid-cols-7 gap-4">
-              <span className="flex items-center gap-4">
-                <img src="/images/p2.png" alt="Product 2" className="w-12 h-12" />
-                <span>Product 2</span>
-              </span>
-              <span className="text-[#8A8FB9]">$30</span>
-              <span className="flex items-center gap-2">
-                <button onClick={() => decreaseQuantity(1)} className="text-[#FB2E86]">-</button>
-                <span>{quantities[1]}</span>
-                <button onClick={() => increaseQuantity(1)} className="text-[#FB2E86]">+</button>
-              </span>
-              <span className="text-[#8A8FB9]">Blue</span>
-              <span className="text-[#8A8FB9]">M</span>
-              <span className="text-[#8A8FB9]">$60</span>
-            </li>
-            <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-            {/* Cart Item 4 */}
-            <li className="grid grid-cols-7 gap-4">
-              <span className="flex items-center gap-4">
-                <img src="/images/p3.png" alt="Product 3" className="w-12 h-12" />
-                <span>Product 3</span>
-              </span>
-              <span className="text-[#8A8FB9]">$40</span>
-              <span className="flex items-center gap-2">
-                <button onClick={() => decreaseQuantity(2)} className="text-[#FB2E86]">-</button>
-                <span>{quantities[2]}</span>
-                <button onClick={() => increaseQuantity(2)} className="text-[#FB2E86]">+</button>
-              </span>
-              <span className="text-[#8A8FB9]">Green</span>
-              <span className="text-[#8A8FB9]">S</span>
-              <span className="text-[#8A8FB9]">$40</span>
-            </li>
-            <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-            {/* Cart Item 5 */}
-            <li className="grid grid-cols-7 gap-4">
-              <span className="flex items-center gap-4">
-                <img src="/images/p4.png" alt="Product 4" className="w-12 h-12" />
-                <span>Product 4</span>
-              </span>
-              <span className="text-[#8A8FB9]">$25</span>
-              <span className="flex items-center gap-2">
-                <button onClick={() => decreaseQuantity(3)} className="text-[#FB2E86]">-</button>
-                <span>{quantities[3]}</span>
-                <button onClick={() => increaseQuantity(3)} className="text-[#FB2E86]">+</button>
-              </span>
-              <span className="text-[#8A8FB9]">Yellow</span>
-              <span className="text-[#8A8FB9]">XL</span>
-              <span className="text-[#8A8FB9]">$75</span>
-            </li>
-          </ul>
+      <div className="flex flex-row mt-[310px]">
+        <div className="ml-[270px] grid grid-cols-4 gap-2 w-[900px] ">
+          {" "}
+          {/* Reduced gap from gap-3 to gap-2 */}
+          {/* Headings */}
+          <div className="font-semibold text-[20px]">Product</div>
+          <div className="font-semibold text-[20px]">Price</div>
+          <div className="ml-[-90px] font-semibold text-[20px]">Quantity</div>
+          <div className="ml-[-120px] font-semibold text-[20px]">Total</div>
+          {/* Row 1 */}
+          <div className="flex items-center mt-11">
+            <img
+              src="/images/cc1.png"
+              alt="Product 1"
+              className="w-[83px] h-[87px] object-cover rounded mr-4"
+            />
+            {/* Cancel Icon */}
+            <div className="absolute top-[495px] right-[1158px] w-[17px] h-[17px] flex items-center justify-center bg-black rounded-full cursor-pointer hover:bg-red-700 transition">
+              <span className="text-white mt-[-3px] text-[20px] font-">×</span>
+            </div>
+            <div>
+              <p className="text-[14px] font-semibold">Ut diam consequat</p>
+              <p className="text-sm text-[#A1A8C1]">Color: Brown</p>
+              <p className="text-sm text-[#A1A8C1]">Size: XL</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <p className="text-[14px] font-semibold">$32.00</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-60px] text-[14px] font-semibold">1</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-120px] text-[14px] font-semibold">$32.00</p>
+          </div>
+          <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
+          {/* Row 2 */}
+          <div className="flex items-center">
+            <img
+              src="/images/c2.png"
+              alt="Product 2"
+              className="w-[83px] h-[87px] object-cover rounded mr-4"
+            />
+            {/* Cancel Icon */}
+            <div className="absolute top-[600px] right-[1158px] w-[17px] h-[17px] flex items-center justify-center bg-black rounded-full cursor-pointer hover:bg-red-700 transition">
+              <span className="text-white mt-[-3px] text-[20px] font-">×</span>
+            </div>
+            <div>
+              <p className="text-[14px] font-semibold">Ut diam consequat</p>
+              <p className="text-sm text-[#A1A8C1]">Color: Brown</p>
+              <p className="text-sm text-[#A1A8C1]">Size: XL</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <p className=" text-[14px] font-semibold">$28.00</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-60px] text-[14px] font-semibold">2</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-125px] text-[14px] font-semibold">$56.00</p>
+          </div>
+          <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
+          {/* Row 3 */}
+          <div className="flex items-center">
+            <img
+              src="/images/c3.png"
+              alt="Product 3"
+              className="w-[83px] h-[87px] object-cover rounded mr-4"
+            />
+            {/* Cancel Icon */}
+            <div className="absolute top-[700px] right-[1158px] w-[17px] h-[17px] flex items-center justify-center bg-black rounded-full cursor-pointer hover:bg-red-700 transition">
+              <span className="text-white mt-[-3px] text-[20px] font-">×</span>
+            </div>
+            <div>
+              <p className="text-[14px] font-semibold">Ut diam consequat</p>
+              <p className="text-sm text-[#A1A8C1]">Color: Black</p>
+              <p className="text-sm text-[#A1A8C1]">Size: L</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <p className=" text-[14px] font-semibold">$20.00</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-60px] text-[14px] font-semibold">1</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-120px] text-[14px] font-semibold">$20.00</p>
+          </div>
+          <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
+          {/* Row 4 */}
+          <div className="flex items-center">
+            <img
+              src="/images/c4.png"
+              alt="Product 4"
+              className="w-[83px] h-[87px] object-cover rounded mr-4"
+            />
+            {/* Cancel Icon */}
+            <div className="absolute top-[810px] right-[1158px] w-[17px] h-[17px] flex items-center justify-center bg-black rounded-full cursor-pointer hover:bg-red-700 transition">
+              <span className="text-white mt-[-3px] text-[20px] font-">×</span>
+            </div>
+            <div>
+              <p className="text-[14px] font-semibold">Ut diam consequat</p>
+              <p className="text-sm text-[#A1A8C1]">Color: White</p>
+              <p className="text-sm text-[#A1A8C1]">Size: M</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <p className="text-[14px] font-semibold">$25.00</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-60px]  text-[14px] font-semibold">1</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-120px] text-[14px] font-semibold">$25.00</p>
+          </div>
+          <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
+          {/* Row 5 */}
+          <div className="flex items-center">
+            <img
+              src="/images/c5.png"
+              alt="Product 5"
+              className="w-[83px] h-[87px] object-cover rounded mr-4"
+            />
+            {/* Cancel Icon */}
+            <div className="absolute top-[910px] right-[1158px] w-[17px] h-[17px] flex items-center justify-center bg-black rounded-full cursor-pointer hover:bg-red-700 transition">
+              <span className="text-white mt-[-3px] text-[20px] font-">×</span>
+            </div>
+            <div>
+              <p className="text-[14px] font-semibold">Ut diam consequat</p>
+              <p className="text-sm text-[#A1A8C1]">Color: Gray</p>
+              <p className="text-sm text-[#A1A8C1]">Size: S</p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <p className=" text-[14px] font-semibold">$18.00</p>
+          </div>
+          <div className="flex items-center">
+            <p className=" ml-[-60px] text-[14px] font-semibold">3</p>
+          </div>
+          <div className="flex items-center">
+            <p className="ml-[-120px] text-[14px] font-semibold">$54.00</p>
+          </div>
+          <hr className="col-span-4 w-[620px] border-t border-[#E8E6F1]" />
+          <button className="bg-[#FB2E86] w-[140px] font-lato mt-7 text-white py-2 px-2 rounded-[2px] hover:bg-[#0d660b] text-[16px] transition ">
+            Update Cart
+          </button>
+          <button className="ml-[255px] bg-[#FB2E86] w-[140px] font-lato mt-7 text-white py-2 px-2 rounded-[2px] hover:bg-[#0d660b] text-[16px] transition ">
+            Clear Cart
+          </button>
         </div>
-{/* Right Column: Cart Totals */}
-<section>
-<h2 className="text-[#151875] font-[Josefin Sans] ml-[15px] mt-[130px] text-[24px] whitespace-nowrap font-bold mb-6">Cart Totals</h2>
-<div className="w-[350px] h-[300px] ml-[-90px] mt-[30px] bg-[#F6F5FF] p-8 shadow-md rounded-lg">
-  
-  <div className="space-y-4">
-    <div className="flex justify-between">
-      <span className="text-[#1D3178] font-lato">Subtotals:</span>
-      <span className="text-[#15245E]">$325</span>
-    </div>
-    <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-    <div className="flex justify-between">
-      <span className="text-[#1D3178] font-lato">Totals:</span>
-      <span className="text-[#15245E]">$451.50</span>
-    </div>
-    <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-    <div className=" flex items-center justify-between text-[12px] text-[#8A91AB]">
-      <span className="w-2 h-2 bg-green-500 rounded-full"></span> {/* Green dot */}
-      <p className="mr-[40px]">Shipping & taxes calculated at checkout</p>
-    </div>
-  </div>
-  <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
-    Proceed To Checkout
-  </button>
-</div>
-</section>
 
-{/* Calculate shipping */}
-<section>
-<h2 className="text-[#151875] font-[Josefin Sans]  absolute ml-[-320px] mt-[570px] text-[24px] whitespace-nowrap font-bold mb-6">Calculate Shipping</h2>
-<div className="w-[350px] h-[300px] absolute ml-[-390px] mt-[657px] bg-[#F6F5FF] p-8 shadow-md rounded-lg">
-  
-  <div className="space-y-4">
-    <div className="flex justify-between">
-      <span className="text-[#1D3178] opacity-25 font-lato">Bangladesh</span>
-    </div>
-    <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-    <div className="flex justify-between">
-      <span className="text-[#1D3178] opacity-25 font-lato">Mirpur Dhaka - 1200</span>
-   
-    </div>
-    <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-    <div className="flex justify-between">
-      <span className="text-[#1D3178] opacity-25 font-lato">Postal Code</span>
-   
-    </div>
-    <div className="border-t border-[#E5E7EB] mt-2"></div> {/* Line divider */}
-  </div>
-  <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
-    Calculate Shipping
-  </button>
-</div>
-</section>
+        <div className="absolute ml-[1050px] mt-[-140px]">
+          <div>
+            <h2 className="text-[#151875]  ml-[15px] mt-[140px] text-[20px] whitespace-nowrap font-bold mb-6">
+              Cart Total
+            </h2>
+            <div className="w-[350px] h-[260px] ml-[-90px] mt-[10px] bg-[#F6F5FF] p-8 rounded-[2px]">
+              <div className="space-y-4">
+                <div className="flex justify-between">
+                  <span className="text-[#1D3178] font-lato">Subtotals:</span>
+                  <span className="text-[#15245E]">$325</span>
+                </div>
+                <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
+                {/* Line divider */}
+                <div className="flex justify-between">
+                  <span className="text-[#1D3178] font-lato">Totals:</span>
+                  <span className="text-[#15245E]">$451.50</span>
+                </div>
+                <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
+                {/* Line divider */}
+                <div className=" flex items-center justify-between text-[12px] text-[#8A91AB]">
+                  <span className="w-2 h-2 bg-[green-500] rounded-full"></span>{" "}
+                  {/* Green dot */}
+                  <p className="mr-[40px]">
+                    Shipping & taxes calculated at checkout
+                  </p>
+                </div>
+              </div>
+<Link href="/orderplaced">
+              <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
+                Proceed To Checkout
+              </button>
+              </Link>
+            </div>
+          </div>
 
-</div>
-
-
+          {/* Calculate shipping */}
+          <div>
+            <h2 className="text-[#151875] text-[20px] whitespace-nowrap ml-[-10px] mt-[30px] font-bold mb-6">
+              Calculate Shipping
+            </h2>
+            <div className="w-[350px] h-[280px] ml-[-90px] bg-[#F6F5FF] p-8  rounded-[2px] mt-[-7px] ">
+              <div className="space-y-4">
+                <div className="flex justify-between">
+                  <span className="text-[#1D3178] opacity-25 font-lato">
+                    Bangladesh
+                  </span>
+                </div>
+                <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
+                {/* Line divider */}
+                <div className="flex justify-between">
+                  <span className="text-[#1D3178] opacity-25 font-lato">
+                    Mirpur Dhaka - 1200
+                  </span>
+                </div>
+                <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
+                {/* Line divider */}
+                <div className="flex justify-between">
+                  <span className="text-[#1D3178] opacity-25 font-lato">
+                    Postal Code
+                  </span>
+                </div>
+                <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
+                {/* Line divider */}
+              </div>
+              <button className="bg-[#FB2E86] font-lato mt-7 text-white py-2 px-5 rounded-md hover:bg-[#0d660b] text-[14px] transition ">
+                Calculate Shipping
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[100px]"> </div>
     </div>
   );
 }
