@@ -9,17 +9,17 @@ const OfferProductList = () => {
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(1).png',
+      image: '/images/29(1).png',
       name: 'Sed placerat.',
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(2).png',
+      image: '/images/29(2).png',
       name: 'Netus proin.',
       price: '$12.00 - $15.00',
     },
     {
-      image: '/imageS/29(3).png',
+      image: '/images/29(3).png',
       name: 'Platea in.',
       price: '$12.00 - $15.00',
     },
