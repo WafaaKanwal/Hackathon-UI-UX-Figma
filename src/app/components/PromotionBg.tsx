@@ -48,14 +48,14 @@ const PromotionBg = () => {
 <div className="w-auto space-y-6 mr-[20.4rem] mt-[10rem] ">
  <p className="text-[#FB2E86] font-medium text-[.9rem] mb-[-.5rem]">Best Furniture For Your Castle...</p>
  <h1 className="text-[background: #000000;
-] font-bold text-[42px] font-josefin leading-tight whitespace-nowrap">
+] font-bold text-[42px] leading-tight whitespace-nowrap">
    New Furniture Collection <br /> Trends in 2020
  </h1>
  <p className="text-[#8A8FB9] text-[13px] font-semibold  ">
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing 
   <br /> in phasellus non in justo.
  </p>
- <button className="bg-[#FB2E86] text-white text-[13px] font-josefin font-normal px-9 py-3 rounded-sm  hover:bg-[#E94085] ">
+ <button className="bg-[#FB2E86] text-white text-[13px] font-normal px-9 py-3 rounded-sm  hover:bg-[#E94085] ">
    Shop Now
  </button>
 </div>

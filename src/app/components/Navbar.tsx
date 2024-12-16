@@ -1,18 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
+import Homemenu from './Homemenu'
 
 const Navbar = () => {
   return (
     <>
         <div className="flex items-center justify-between mx-auto w-[65%] h-16">
       {/* Logo Section */}
+      
+      <Link href="/hekto">
       <div className="flex items-center ">
-        <h1 className="font-josefin text-[32px] font-bold text-[#000] ">Hekto</h1>
+        <h1 className="text-[32px] font-bold text-[#000] ">Hekto</h1>
       </div>
+      </Link>
 
       {/* Navigation Links */}
       <div className="flex items-center space-x-6 mr-24">
-        <div className="relative cursor-pointer mr-[14px] text-[#FB2E86] hover:text-[#0D0E43]">
+        {/* <div className="relative cursor-pointer mr-[14px] text-[#FB2E86] hover:text-[#0D0E43]">
          <Link href="/"> <span>Home</span></Link>
           <svg
             className="absolute right-[-16px] top-[4.5px] w-4 h-4 "
@@ -26,14 +30,17 @@ const Navbar = () => {
           >
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
-        </div>
-        <Link href="#" className="text-[#0D0E43] hover:text-[#FB2E86]">
+        </div> */}
+
+
+        <Homemenu />
+        <Link href="/extra" className="text-[#0D0E43] hover:text-[#FB2E86]">
           Pages
         </Link>
         <Link href="/productdetails" className="text-[#0D0E43] hover:text-[#FB2E86]">
           Products
         </Link>
-        <Link href="#" className="text-[#0D0E43] hover:text-[#FB2E86]">
+        <Link href="/blog" className="text-[#0D0E43] hover:text-[#FB2E86]">
           Blog
         </Link>
         <Link href="/shoplist" className="text-[#0D0E43] hover:text-[#FB2E86]">

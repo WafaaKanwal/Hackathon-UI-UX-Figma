@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
+
 const HeaderBar: React.FC = () => {
   return (
-    <div className="bg-[#7E33E0] w-full h-11 flex items-center justify-between px-[18rem]  text-white text-[12px] leading-[16px] font-josefin font-medium">
+    <div className="bg-[#7E33E0] w-full h-11 flex items-center justify-between px-[18rem]  text-white text-[12px] leading-[16px] font-medium">
       {/* Left Section */}
       <div className="flex gap-[375px] mx-auto ml-5 ">
       <div className="flex items-center space-x-11">
@@ -126,7 +127,7 @@ const HeaderBar: React.FC = () => {
             </svg>
           </span>
         </div>
-        
+        <Link href="/cart">
         <div className="cursor-pointer">
           <svg
             width="24"
@@ -149,7 +150,9 @@ const HeaderBar: React.FC = () => {
             />
           </svg>
         </div>
+        </Link>
       </div>
+
     </div>
     </div>
   );
