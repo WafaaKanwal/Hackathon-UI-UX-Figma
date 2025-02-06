@@ -4,29 +4,30 @@ import Image from "next/image";
 export default function ProductDetails() {
   return (
     <div className="min-h-screen py-10 relative">
-      {/* Rectangle Section */}
-      <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
-        <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[67px] "
-          style={{
-            fontSize: "36px",
-            lineHeight: "25.78px",
-          }}
-        >
-          Product Details
-        </h1>
-        <p
-          className="mt-5 ml-[286px]"
-          style={{
-            fontSize: "16px",
-            fontWeight: 500,
-            lineHeight: "14.4px",
-            color: "black",
-          }}
-        >
-          Home . Pages <span className="text-[#FB2E86]">. Product Details</span>
-        </p>
-      </div>
+ {/* Rectangle Section */}
+<div className="relative w-full h-[200px] bg-[#F6F5FF] flex flex-col items-center sm:items-start sm:pl-[283px] sm:mt-[-44px]">
+  <h1
+    className="text-[#151875] font-bold mt-[67px] text-center sm:text-left"
+    style={{
+      fontSize: "36px",
+      lineHeight: "25.78px",
+    }}
+  >
+    Product Details
+  </h1>
+  <p
+    className="mt-5 text-center sm:text-left"
+    style={{
+      fontSize: "16px",
+      fontWeight: 500,
+      lineHeight: "14.4px",
+      color: "black",
+    }}
+  >
+    Home . Pages <span className="text-[#FB2E86]">. Product Details</span>
+  </p>
+</div>
+
 
       {/* Product Details Rectangle Section */}
       <div className="absolute w-[960px] h-[509px] top-[329px] left-[271px] bg-white rounded-[2px] shadow-xl overflow-hidden shadow-[#F6F4FD]">
@@ -124,16 +125,17 @@ export default function ProductDetails() {
       <div className="mt-[910px] bg-[#F9F8FE] w-full h-[460px]">
         {/* Section Headings */}
         <div className="flex gap-10 ml-[272px] items-center mb-4 text-[16px]">
-          <h4 className="text-lg mt-[79px] font-bold text-[#151875]">
-            Description
-          </h4>
-          <h4 className="text-lg mt-[79px] font-bold text-[#151875]">
+        <h4 className="text-lg mt-[79px] font-bold text-[#151875] hover:underline">
+  Description
+</h4>
+
+          <h4 className="text-lg mt-[79px] font-bold text-[#151875] hover:underline">
             Additional Info
           </h4>
-          <h4 className="text-lg mt-[79px] font-bold text-[#151875]">
+          <h4 className="text-lg mt-[79px] font-bold text-[#151875] hover:underline">
             Reviews
           </h4>
-          <h4 className="text-lg mt-[79px] font-bold text-[#151875]">Video</h4>
+          <h4 className="text-lg mt-[79px] font-bold text-[#151875] hover:underline">Video</h4>
         </div>
 
         {/* Description */}
@@ -196,8 +198,24 @@ export default function ProductDetails() {
               nunc nec. Dui, massa viverr.
             </p>
           </div>
+          <div className="flex items-start gap-2 mb-2">
+            <Image
+              src="/images/md-arrow.png"
+              alt="Arrow Icon"
+              width={16}
+              height={16}
+            />
+            <p className="text-[13px] text-[#A9ACC6] line-[29px] text-left text-underline-position-from-font text-decoration-skip-ink-none whitespace-nowrap">
+              Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam
+              arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate
+              nunc nec. Dui, massa viverr.
+            </p>
+          </div>
         </div>
       </div>
+
+
+
 
       <div className="mt-[80px] ml-[282px]">
         <h1
@@ -241,7 +259,7 @@ export default function ProductDetails() {
             />
             <div className="p-4">
               <h2 className="text-[14px] ml-[-17px] font-semibold">
-                Women’s Fashion
+                Woman&apos;s Fashion
               </h2>
               <p className="text-gray-500 text-[11px] absolute leading-[15px] mt-[7px] ml-[-17px] ">
                 $28.00

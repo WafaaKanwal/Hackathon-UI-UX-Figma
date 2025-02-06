@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Homemenu from './Homemenu'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
+import { X } from 'lucide-react'
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
