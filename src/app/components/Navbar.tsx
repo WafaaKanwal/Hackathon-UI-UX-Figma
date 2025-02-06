@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Homemenu from './Homemenu'
-import { Menu } from 'lucide-react'
-import { X } from 'lucide-react'
+
+import { FiMenu, FiX } from 'react-icons/fi'
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -26,7 +26,8 @@ const Navbar = () => {
             onClick={toggleSidebar}
             aria-label="Toggle menu"
           >
-            {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
+            {/* Replaced lucide-react icons with react-icons */}
+            {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
 
