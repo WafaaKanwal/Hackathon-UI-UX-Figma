@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const PromotionBg = () => {
   return (
-    <div className='w-full h-[610px] bg-[#F2F0FF]'>
+    <div className='w-full h-[660px] sm:h-[610px] bg-[#F2F0FF]'>
       <div className="relative flex items-center justify-between px-6">
         {/* Hanging Light */}
         <div>
@@ -107,7 +107,7 @@ const PromotionBg = () => {
       </div>
 
       {/* Dots for Carousel */}
-      <div className='flex gap-3 place-content-center mt-28'>
+      <div className='flex gap-3 place-content-center mt-1 md:mt-28'>
         <div className='w-[10px] h-[10px] border-2 border-[#FB2E86] transform rotate-[50deg] cursor-pointer hover:bg-[#FB2E86]'></div>
         <div className='w-[10px] h-[10px] border-2 border-[#FB2E86] transform rotate-[50deg] cursor-pointer hover:bg-[#FB2E86]'></div>
         <div className='w-[10px] h-[10px] border-2 border-[#FB2E86] transform rotate-[50deg] cursor-pointer hover:bg-[#FB2E86]'></div>

@@ -40,6 +40,11 @@ const DropdownMenu = () => {
           onMouseLeave={() => setIsDropdownOpen(false)} // Close on leave
         >
           <ul className="text-gray-600">
+          <li className="hover:bg-[#7E33E0] hover:text-white px-4 py-2">
+              <Link href="/hekto">
+                <span className="block">Hekto</span>
+              </Link>
+            </li>
             <li className="hover:bg-[#7E33E0] hover:text-white px-4 py-2">
               <Link href="/about">
                 <span className="block">About us</span>
@@ -53,6 +58,11 @@ const DropdownMenu = () => {
             <li className="hover:bg-[#7E33E0] hover:text-white px-4 py-2">
               <Link href="/shoplist">
                 <span className="block">Shoplist</span>
+              </Link>
+            </li>
+            <li className="hover:bg-[#7E33E0] hover:text-white px-4 py-2">
+              <Link href="/singleblog">
+                <span className="block">Single Blog</span>
               </Link>
             </li>
             <li className="hover:bg-[#7E33E0] hover:text-white px-4 py-2">

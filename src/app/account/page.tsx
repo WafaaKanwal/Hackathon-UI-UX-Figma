@@ -1,38 +1,22 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function MyAccount() {
   return (
     <div className="bg-gray-50 min-h-screen">
-    {/* Rectangle Section */}
-    <div className="absolute  mt-[120px] top-0 left-0 w-full h-[200px] bg-[#F6F5FF] flex flex-col items-center md:items-start md:pl-[287px] s">
-      <h1
-        className="text-[#151875] font-bold mt-[67px]"
-        style={{
-          fontSize: "36px",
-          lineHeight: "25.78px",
-        }}
-      >
-        My Account
-      </h1>
-      <p
-        className="mt-5"
-        style={{
-          fontSize: "16px",
-          fontWeight: 500,
-          lineHeight: "14.4px",
-          color: "black",
-        }}
-      >
-        Home . Pages <span className="text-[#FB2E86]">. My Account</span>
-      </p>
-    </div>
+      {/* Header Section */}
+      <div className="bg-[#F6F5FF] py-12 mb-12">
+        <div className="container mx-auto px-4">
+          <h1 className="text-[#151875] font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[36px] mb-4">My Account</h1>
+          <p className="text-black text-sm sm:text-base font-medium">
+            Home . Pages <span className="text-[#FB2E86]">. My Account</span>
+          </p>
+        </div>
+      </div>
 
       {/* Main Section */}
       <main className="container mx-auto px-4 flex flex-col items-center">
-        <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full mt-[300px]">
-          <h2 className="text-[32px] font-bold text-center text-gray-800">
-            Login
-          </h2>
+        <div className="bg-white shadow-md rounded-lg p-6 sm:p-8 w-full max-w-md mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-2">Login</h2>
           <p className="text-center font-[Lato] text-[#9096B2] text-sm mb-6">
             Please login using account details below.
           </p>
@@ -60,14 +44,14 @@ export default function MyAccount() {
             </div>
             <button
               type="submit"
-              className="bg-pink-500 text-white w-full py-3 rounded-lg font-semibold hover:bg-pink-600"
+              className="bg-pink-500 text-white w-full py-3 rounded-lg font-semibold hover:bg-pink-600 transition duration-300"
             >
               Sign In
             </button>
           </form>
 
           <p className="text-center text-gray-600 text-sm mt-6">
-            Don not have an account?{" "}
+            Don't have an account?{" "}
             <a href="#" className="text-pink-500 hover:underline">
               Create account
             </a>
@@ -75,15 +59,11 @@ export default function MyAccount() {
         </div>
 
         {/* Footer Logos */}
-        <div className="flex justify-center mt-[90px]">
-          <Image
-            src={"/images/image 1174.png"}
-            alt="brands"
-            width={800}
-            height={1111}
-          />
+        <div className="w-full max-w-4xl mx-auto mb-12">
+          <Image src="/images/image 1174.png" alt="brands" width={800} height={111} className="w-full h-auto" />
         </div>
       </main>
     </div>
-  );
+  )
 }
+

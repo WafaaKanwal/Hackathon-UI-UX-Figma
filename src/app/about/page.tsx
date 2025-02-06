@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function About() {
-  return (
+  return (  
     <div className="min-h-screen py-10 relative">
       {/* Rectangle Section */}
       <div className="absolute top-0 left-0 w-full h-[150px] md:h-[200px] bg-[#F6F5FF]">
@@ -21,7 +21,7 @@ export default function About() {
         {/* Left Column: Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <Image
-            src="/images/about.png"
+            src="/images/c1.png"
             alt="About Us"
             width={500}
             height={400}

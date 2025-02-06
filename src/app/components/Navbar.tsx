@@ -13,7 +13,7 @@ const Navbar = () => {
     setIsSidebarOpen(!isSidebarOpen)
   }
 
-  return (
+  return (  
     <div>
       <div className="flex flex-col md:flex-row items-center justify-between mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-28 xl:px-[13rem] 2xl:px-60 h-auto md:h-16 py-4 md:py-0">
         {/* Logo Section */}
@@ -85,3 +85,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

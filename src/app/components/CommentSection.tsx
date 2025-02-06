@@ -9,7 +9,7 @@ const CommentSection = () => {
       {/* Cards Section */}
       <div className="space-y-4 mb-10">
         {/* Card 1 */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center mb-8 bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.1),0px-4px_10px_rgba(0,0,0,0.1),4px_0px_10px_rgba(0,0,0,0.1),-4px_0px_10px_rgba(0,0,0,0.1)] rounded-md p-4 cursor-pointer">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center mb-8 bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.1),_0px_-4px_10px_rgba(0,0,0,0.1),_4px_0px_10px_rgba(0,0,0,0.1),_-4px_0px_10px_rgba(0,0,0,0.1)] rounded-md p-4 cursor-pointer">
           <Image
             src="/images/Rectangle 59.png"
             alt="Sapien"
@@ -29,7 +29,7 @@ const CommentSection = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center mb-8 bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.1),0px-4px_10px_rgba(0,0,0,0.1),4px_0px_10px_rgba(0,0,0,0.1),-4px_0px_10px_rgba(0,0,0,0.1)] rounded-md p-4 cursor-pointer">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center mb-8 bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.1),_0px_-4px_10px_rgba(0,0,0,0.1),_4px_0px_10px_rgba(0,0,0,0.1),_-4px_0px_10px_rgba(0,0,0,0.1)] rounded-md p-4 cursor-pointer">
           <Image
             src="/images/Rectangle 59 (1).png"
             alt="Augue"
@@ -110,3 +110,5 @@ const CommentSection = () => {
 }
 
 export default CommentSection
+
+

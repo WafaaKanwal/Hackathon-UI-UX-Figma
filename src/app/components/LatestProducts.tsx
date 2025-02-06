@@ -1,3 +1,4 @@
+
 import React from "react";
 import { BsCart2 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
@@ -16,37 +17,42 @@ const lato = Lato({
 const LatestProducts = () => {
   return (
     <section className="w-full px-6 py-12">
-      <h2 className="text-[2.35rem] leading-[2.35rem] font-bold text-center text-[#151875] mb-8 mt-[-1rem] flex place-content-center">
+
+<div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.35rem] leading-tight font-bold text-center text-[#151875] mb-4 sm:mb-6 lg:mb-8 mt-0 sm:mt-6 lg:mt-8">
         Latest Products
       </h2>
       <div className={lato.className}>
-        <div className="flex gap-12 place-content-center mt-[-1rem] mb-12">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-12 mt-2 sm:mt-4 lg:mt-6 mb-6 sm:mb-8 lg:mb-12">
           <Link
             href="#"
-            className="text-[#151875] text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
+            className="text-[#151875] text-base sm:text-lg lg:text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
           >
             New Arrival
           </Link>
           <Link
             href="#"
-            className="text-[#151875] text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
+            className="text-[#151875] text-base sm:text-lg lg:text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
           >
             Best Seller
           </Link>
           <Link
             href="#"
-            className="text-[#151875] text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
+            className="text-[#151875] text-base sm:text-lg lg:text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
           >
             Featured
           </Link>
           <Link
             href="#"
-            className="text-[#151875] text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
+            className="text-[#151875] text-base sm:text-lg lg:text-[18px] hover:text-[#FB4997] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#FB4997] hover:after:w-full after:transition-all after:duration-300"
           >
             Special Offer
           </Link>
         </div>
       </div>
+    </div>
+
+
       {/* Latest Products */}
       <div className="flex place-content-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -389,3 +395,6 @@ const LatestProducts = () => {
 };
 
 export default LatestProducts;
+
+
+

@@ -9,7 +9,7 @@ import { IoMdPlay } from "react-icons/io"
 import ProductGrid from "../components/ProductGrid"
 import { FaArrowLeftLong } from "react-icons/fa6"
 import { FaArrowRightLong } from "react-icons/fa6"
-import CommentSection from "../components/CommentSection"
+import CommentSection from "../components/CommentSection" 
 import Image from "next/image"
 
 export default function Blog() {
@@ -450,3 +450,4 @@ export default function Blog() {
     </>
   )
 }
+
