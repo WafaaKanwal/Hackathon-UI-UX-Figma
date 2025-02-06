@@ -93,20 +93,20 @@ export default function Products() {
       {/* Rectangle Section */}
       <div className="absolute mt-[-44px] left-0 w-full h-[220px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[279px] mt-[67px] font-"
+          className="ml-[200px] text-[#151875] font- xs:ml-[14px] sm:ml-[40px] md:ml-[40px] lg:ml-[79px] mt-[67px] 2xl:ml-[260px]"
           style={{
-            fontSize: "36px",
-            lineHeight: "25.78px",
+            fontSize: "clamp(24px, 5vw, 36px)",
+            lineHeight: "1.2",
           }}
         >
           Shop Grid Default
         </h1>
         <p
-          className="mt-5 ml-[282px]"
+          className="mt-5 ml-4 sm:ml-[40px] md:ml-[40px] lg:ml-[80px] 2xl:ml-[260px] "
           style={{
-            fontSize: "16px",
+            fontSize: "clamp(12px, 3vw, 16px)",
             fontWeight: 500,
-            lineHeight: "14.4px",
+            lineHeight: "1.2",
             color: "black",
           }}
         >
@@ -116,24 +116,24 @@ export default function Products() {
       </div>
 
       {/* Title Section */}
-      <div className="absolute mt-[370px] top-4 w-full sm:w-4/5 lg:w-3/4 px-4 sm:px-6 lg:px-8 ml-[250px] flex items-center justify-between">
-        <div>
+      <div className="absolute mt-[320px] sm:mt-[320px] md:mt-[370px] top-4 w-full px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+        <div className=" sm:ml-0 mb-4 sm:mb-0 sm:mt-11 md:ml-[10px] mt-[20px] 2xl:ml-[222px]">
           <h2
-            className="text-[#151875] font-bold whitespace-nowrap"
+            className=" text-[#151875] font-bold whitespace-normal sm:whitespace-nowrap"
             style={{
-              fontSize: "22px",
-              lineHeight: "25.78px",
+              fontSize: "clamp(18px, 4vw, 22px)",
+              lineHeight: "1.2",
             }}
           >
             Ecommerce Accessories & Fashion Items
           </h2>
           <p
-            className="mt-2"
+            className="mt-2 "
             style={{
               fontFamily: "Lato",
-              fontSize: "12px",
+              fontSize: "clamp(10px, 2vw, 12px)",
               fontWeight: 400,
-              lineHeight: "14.4px",
+              lineHeight: "1.2",
               color: "#8A8FB9",
             }}
           >
@@ -142,12 +142,12 @@ export default function Products() {
         </div>
 
         {/* Sort by and Per Page Section */}
-        <div className=" w-[20px] whitespace-nowrap flex items-center gap-4 mr-[210px]">
+        <div className="mr-[200px]  flex flex-col sm:flex-row items-start sm:items-center sm:mt-[130px] sm:ml-[-367px] gap-4 w-full sm:w-auto md:mt-[99px] md:ml-[-230px] lg:ml-[230px] 2xl:ml-[-50px] ">
           {/* Per Page */}
-          <div className="ml-[-380px] flex items-center">
+          <div className="flex items-center">
             <label
               htmlFor="per-page"
-              className="mr-2 text-[#3F509E] text-sm font-medium"
+              className="mr-2 text-[#3F509E] text-sm font-medium whitespace-nowrap"
             >
               Per Page:
             </label>
@@ -163,7 +163,7 @@ export default function Products() {
           <div className="flex items-center">
             <label
               htmlFor="sort-by"
-              className="mr-2 text-sm font-medium text-[#3F509E]"
+              className="mr-2 text-sm font-medium text-[#3F509E] whitespace-nowrap"
             >
               Sort By:
             </label>
@@ -182,7 +182,7 @@ export default function Products() {
           <div className="flex items-center">
             <label
               htmlFor="view"
-              className="mr-2 text-sm font-medium text-[#3F509E]"
+              className="mr-2 text-sm font-medium text-[#3F509E] whitespace-nowrap"
             >
               View:
             </label>
@@ -203,7 +203,7 @@ export default function Products() {
               {/* List View Icon (Boxes Filled) */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 ml-[-15px] text-[#3F509E] hover:text-blue-500 cursor-pointer"
+                className="w-5 h-5 text-[#3F509E] hover:text-blue-500 cursor-pointer"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -241,23 +241,24 @@ export default function Products() {
             </div>
             <input
               type="number"
-              id="per-page"
-              name="per-page"
-              className="ml-[14px] w-[115px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
+              id="per-page-2"
+              name="per-page-2"
+              className="ml-2 w-[115px] h-[25px] border border-[#E7E6EF] p-1 text-sm"
             />
           </div>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Product Grid */}
-        <div className="mt-[400px] relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      {/* Product Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative 2xl:px-28">
+        <div className="mt-[400px] sm:mt-[450px] md:mt-[500px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div
               key={product.id}
               className="flex flex-col items-center relative"
             >
               {/* Card Container */}
-              <div className="bg-gray-100 rounded-lg shadow-md hover:shadow-lg overflow-hidden transition-all duration-300 flex justify-center items-center p-4 w-[210px] h-[250px]">
+              <div className="bg-gray-100 rounded-lg shadow-md hover:shadow-lg overflow-hidden transition-all duration-300 flex justify-center items-center p-4 w-full h-[250px]">
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -268,7 +269,7 @@ export default function Products() {
               </div>
 
               {/* Name, Dots, and Prices Below the Card */}
-              <h3 className="whitespace-nowrap text-[16px] font-sans font-bold mt-4">
+              <h3 className="text-center text-[16px] font-sans font-bold mt-4 whitespace-nowrap">
                 {product.name}
               </h3>
               <div className="flex justify-center items-center mt-2">
@@ -291,15 +292,20 @@ export default function Products() {
           ))}
         </div>
       </div>
-      <div className="w-[700px] mt-[100px] ml-[400px]">
-        <Image
-          src="/images/image 1174.png"
-          alt="brands"
-          width={1920}
-          height={500}
-          className="w-full object-cover"
-        />
+
+      {/* Footer Image */}
+      <div className="w-full mt-[100px] px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <Image
+            src="/images/image 1174.png"
+            alt="brands"
+            width={1920}
+            height={500}
+            className="w-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );
 }
+
