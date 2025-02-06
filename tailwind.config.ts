@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: "414px", 
+        xs: "390px", 
       },
       fontFamily: {
-        josefin: ["Josefin Sans", "sans-serif"],
+        josefin: ["Josefin Sans", "Lato" ,"sans-serif"],
       },
       colors: {
         background: "var(--background)",
