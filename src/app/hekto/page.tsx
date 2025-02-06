@@ -3,13 +3,12 @@ import Image from "next/image";
 
 export default function HektoDemo() {
   return (
-    <div className="min-h-screen py-10 relative flex flex-row">
+    <div className="min-h-screen py-10 relative flex flex-col lg:flex-row">
       {/* Rectangle Section */}
-      <div className="absolute mt-[-44px] left-0 w-full h-[200px] bg-[#F6F5FF]">
+      <div className="absolute top-0 left-0 w-full h-[150px] md:h-[200px] bg-[#F6F5FF]">
         <h1
-          className="text-[#151875] font-bold ml-[262px] mt-[67px] "
+          className="text-[#151875] font-bold text-2xl md:text-3xl lg:text-4xl pt-8 md:pt-12 lg:pt-16 ml-4 md:ml-8 lg:ml-16 xl:ml-32 2xl:ml-64"
           style={{
-            fontSize: "36px",
             lineHeight: "25.78px",
           }}
         >
@@ -17,248 +16,178 @@ export default function HektoDemo() {
         </h1>
       </div>
 
-      {/*2nd  Section */}
-      <div className="mt-[200px] ml-[-20px]">
-        <h1
-          className="text-[#151875] font-bold ml-[283px] mt-[35px] "
-          style={{
-            fontSize: "24px",
-            lineHeight: "25.78px",
-          }}
-        >
-          Hekto Demo
-        </h1>
-        <p
-          className="mt-4 ml-[283px]"
-          style={{
-            fontSize: "12px",
-            fontWeight: 500,
-            lineHeight: "14.4px",
-            color: "black",
-          }}
-        >
-          Cart/ Information/ Shipping/ Payment
-        </p>
+      {/* 2nd Section */}
+      <div className="mt-[150px] md:mt-[200px] lg:mt-[250px] flex flex-col lg:flex-row gap-8 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+        {/* Left Column: Form Section */}
+        <div className="w-full lg:w-1/2 bg-[#F8F8FD] p-6 md:p-8 lg:p-12 rounded-lg shadow-md">
+          <h1
+            className="text-[#151875] font-bold text-xl md:text-2xl lg:text-3xl"
+            style={{
+              lineHeight: "25.78px",
+            }}
+          >
+            Hekto Demo
+          </h1>
+          <p
+            className="mt-2 text-sm md:text-base lg:text-lg text-black font-medium"
+            style={{
+              lineHeight: "14.4px",
+            }}
+          >
+            Cart/ Information/ Shipping/ Payment
+          </p>
 
-        <div className="flex flex-row">
-          <div className="h-[880px] w-[640px] mt-5 ml-[278px] bg-[#F8F8FD]">
-            <h4 className="absolute ml-8 mt-14 leading-[21px]  font-semibold text-[#1D3178]">
-              Contact Information
-            </h4>
-            <input
-              type="text"
-              placeholder="Email or mobile phone number"
-              className="placeholder-[#C1C8E1] text-[14px] font-lato ml-[32px] mt-[120px] text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
-            />
-            <div className="ml-8 mt-3 w-[570px] h-[2px] bg-[#C1C8E1] "></div>
+          <div className="mt-8 space-y-6">
+            <div>
+              <h4 className="text-[#1D3178] font-semibold text-lg md:text-xl lg:text-2xl">
+                Contact Information
+              </h4>
+              <input
+                type="text"
+                placeholder="Email or mobile phone number"
+                className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato mt-4 text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+              />
+              <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+            </div>
 
-            <div className="flex items-center ml-[32px] mt-[40px]">
+            <div className="flex items-center">
               <input
                 type="checkbox"
-                className="w-[8px] h-[8px] text-[#19D16F] bg-gray-100 border-gray-300 rounded focus:ring-[#19D16F] focus:ring-2"
+                className="w-4 h-4 text-[#19D16F] bg-gray-100 border-gray-300 rounded focus:ring-[#19D16F] focus:ring-2"
               />
-              <label className="ml-2 text-[12px] text-[#8A91AB] font-lato">
+              <label className="ml-2 text-sm md:text-base lg:text-lg text-[#8A91AB] font-lato">
                 Keep me up to date on news and exclusive offers
               </label>
             </div>
 
-            <h4 className="absolute ml-8 mt-[90px] leading-[21px] font-semibold text-[#1D3178]">
-              Shipping address
-            </h4>
+            <div>
+              <h4 className="text-[#1D3178] font-semibold text-lg md:text-xl lg:text-2xl">
+                Shipping address
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="First name (optional)"
+                    className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                  />
+                  <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                  />
+                  <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+                </div>
+              </div>
 
-            <div className="flex flex-row mt-[-17px] ">
-              <input
-                type="text"
-                placeholder="First name (optional)"
-                className="placeholder-[#C1C8E1] absolute text-[14px] font-lato ml-[32px] mt-[163px] text-black bg-transparent border-none focus:ring-0 focus:outline-none"
-              />
-              <div className="absolute ml-8 mt-[199px] w-[285px] h-[2px] bg-[#C1C8E1] "></div>
+              <div className="mt-4">
+                <input
+                  type="text"
+                  placeholder="Address"
+                  className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                />
+                <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+              </div>
 
-              <input
-                type="text"
-                placeholder="Last name"
-                className="placeholder-[#C1C8E1] absolute text-[14px] font-lato ml-[350px] mt-[163px] text-black bg-transparent border-none focus:ring-0 focus:outline-none"
-              />
-              <div className="ml-[345px] mt-[199px] w-[259px] h-[2px] bg-[#C1C8E1] "></div>
+              <div className="mt-4">
+                <input
+                  type="text"
+                  placeholder="Apartment, suite, etc. (optional)"
+                  className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                />
+                <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+              </div>
+
+              <div className="mt-4">
+                <input
+                  type="text"
+                  placeholder="City"
+                  className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                />
+                <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Country"
+                    className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                  />
+                  <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Postal Code"
+                    className="placeholder-[#C1C8E1] text-sm md:text-base lg:text-lg font-lato text-black bg-transparent border-none w-full focus:ring-0 focus:outline-none"
+                  />
+                  <div className="w-full h-[2px] bg-[#C1C8E1] mt-2"></div>
+                </div>
+              </div>
             </div>
 
-            <input
-              type="text"
-              placeholder="Address"
-              className="placeholder-[#C1C8E1] text-[14px] font-lato ml-[32px] mt-[31px] text-black bg-transparent border-none focus:ring-0 focus:outline-none w-full"
-            />
-            <div className="ml-8 mt-2 w-[570px] h-[2px] bg-[#C1C8E1] "></div>
-
-            <input
-              type="text"
-              placeholder="Appaetnentment,suit,e.t.c (optinal)"
-              className="placeholder-[#C1C8E1] text-[14px] font-lato ml-[32px] mt-[31px] text-black bg-transparent border-none focus:ring-0 focus:outline-none w-full"
-            />
-            <div className="ml-8 mt-3 w-[570px] h-[2px] bg-[#C1C8E1] "></div>
-
-            <input
-              type="text"
-              placeholder="City"
-              className="placeholder-[#C1C8E1] text-[14px] font-lato ml-[32px] mt-[35px] text-black bg-transparent border-none focus:ring-0 focus:outline-none w-full"
-            />
-            <div className="ml-8 mt-3 w-[570px] h-[2px] bg-[#C1C8E1] "></div>
-
-            <div className="flex flex-row mt-[-130px]">
-              <input
-                type="text"
-                placeholder="Bangladesh"
-                className="placeholder-[#C1C8E1] absolute text-[14px] font-lato ml-[32px] mt-[163px] text-black bg-transparent border-none focus:ring-0 focus:outline-none"
-              />
-              <div className="absolute ml-8 mt-[199px] w-[285px] h-[2px] bg-[#C1C8E1] "></div>
-
-              <input
-                type="Postal Code"
-                placeholder="Last name"
-                className="placeholder-[#C1C8E1] absolute text-[14px] font-lato ml-[350px] mt-[163px] text-black bg-transparent border-none focus:ring-0 focus:outline-none"
-              />
-              <div className="ml-[345px] mt-[199px] w-[259px] h-[2px] bg-[#C1C8E1] "></div>
-            </div>
-
-            <button className="ml-[30px] mt-[107px] bg-[#FB2E86] p-3 text-white">
+            <button className="bg-[#FB2E86] text-white py-2 px-4 rounded-md hover:bg-[#e42a75] transition w-full text-sm md:text-base lg:text-lg">
               Continue Shipping
             </button>
           </div>
-
-          <div>
-            <div className="grid grid-cols-2 gap-4 p-4">
-              {/* Row 1 */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/h1.png"
-                  alt="Product 1"
-                  width={500} 
-                  height={500}
-                  className="w-[83px] h-[87px] object-cover rounded mr-4"
-                />
-                <div>
-                  <p className="text-[14px] font-semibold">Ut diam consequat</p>
-                  <p className="text-sm text-[#A1A8C1]">Color:Brown</p>
-                  <p className="text-sm text-[#A1A8C1]">Size:XL</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <p className="ml-[55px] text-[14px] font-semibold">$32.00</p>
-              </div>
-              <hr className="col-span-2 w-[350px] border-t border-[#E8E6F1]" />
-
-              {/* Row 2 */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/h2.png"
-                  alt="Product 2"
-                  width={500} 
-                  height={500}
-                  className="w-[83px] h-[87px] object-cover rounded mr-4"
-                />
-                <div>
-                  <p className="text-[14px] font-semibold">Ut diam consequat</p>
-                  <p className="text-sm text-[#A1A8C1]">Color:Brown</p>
-                  <p className="text-sm text-[#A1A8C1]">Size:XL</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <p className="ml-[55px] text-[14px] font-semibold">$32.00</p>
-              </div>
-              <hr className="col-span-2 w-[350px] border-t border-[#E8E6F1]" />
-
-              {/* Row 3 */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/h3.png"
-                  alt="Product 3"
-                  width={500} 
-                  height={500}
-                  className="w-[83px] h-[87px] object-cover rounded mr-4"
-                />
-                <div>
-                  <p className="text-[14px] font-semibold">Ut diam consequat</p>
-                  <p className="text-sm text-[#A1A8C1]">Color:Brown</p>
-                  <p className="text-sm text-[#A1A8C1]">Size:XL</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <p className="ml-[55px] text-[14px] font-semibold">$32.00</p>
-              </div>
-              <hr className="col-span-2 w-[350px] border-t border-[#E8E6F1]" />
-
-              {/* Row 4 */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/h4.png"
-                  alt="Product 4"
-                  width={500} 
-                  height={500}
-                  className="w-[83px] h-[87px] object-cover rounded mr-4"
-                />
-                <div>
-                  <p className="text-[14px] font-semibold">Ut diam consequat</p>
-                  <p className="text-sm text-[#A1A8C1]">Color:Brown</p>
-                  <p className="text-sm text-[#A1A8C1]">Size:XL</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <p className="ml-[55px] text-[14px] font-semibold">$32.00</p>
-              </div>
-              <hr className="col-span-2 w-[350px] border-t border-[#E8E6F1]" />
-
-              {/* Row 5 */}
-              <div className="flex items-center">
-                <Image
-                  src="/images/h5.png"
-                  alt="Product 5"
-                  width={500} 
-                  height={500}
-                  className="w-[83px] h-[87px] object-cover rounded mr-4"
-                />
-                <div>
-                  <p className="text-[14px] font-semibold">Ut diam consequat</p>
-                  <p className="text-sm text-[#A1A8C1]">Color:Brown</p>
-                  <p className="text-sm text-[#A1A8C1]">Size:XL</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <p className="ml-[55px] text-[14px] font-semibold">$32.00</p>
-              </div>
-              <hr className="col-span-2 w-[350px] border-t border-[#E8E6F1]" />
-            </div>
-
-            <div>
-              <div className="w-[350px] h-[270px] ml-[19px] mt-[30px] bg-[#F4F4FC] p-8 rounded-[3px]">
-                <div className="space-y-4">
-                  <div className="flex justify-between">
-                    <span className="text-[#1D3178] font-lato">Subtotals:</span>
-                    <span className="text-[#15245E] text[16px]">‎£219.00</span>
-                  </div>
-                  <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
-                  {/* Line divider */}
-                  <div className="flex justify-between">
-                    <span className="text-[#1D3178] font-lato">Totals:</span>
-                    <span className="text-[#15245E]">‎£325.00</span>
-                  </div>
-                  <div className="border-t border-[#E5E7EB] mt-2"></div>{" "}
-                  {/* Line divider */}
-                  <div className=" flex items-center justify-between text-[12px] text-[#8A91AB]">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>{" "}
-                    {/* Green dot */}
-                    <p className="mr-[40px] mt-[17px]">
-                      Shipping & taxes calculated at checkout
-                    </p>
-                  </div>
-                </div>
-                <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] text-[14px] transition w-full">
-                  Proceed To Checkout
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div className="bg-white h-[150px]"></div>
+        {/* Right Column: Product Summary Section */}
+        <div className="w-full lg:w-1/2">
+          <div className="grid grid-cols-1 gap-4 p-4">
+            {/* Product Rows */}
+            {[...Array(5)].map((_, i) => (
+              <div key={i} className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <Image
+                    src={`/images/h${i + 1}.png`}
+                    alt={`Product ${i + 1}`}
+                    width={83}
+                    height={87}
+                    className="w-[83px] h-[87px] object-cover rounded mr-4"
+                  />
+                  <div>
+                    <p className="text-sm md:text-base lg:text-lg font-semibold">
+                      Ut diam consequat
+                    </p>
+                    <p className="text-sm text-[#A1A8C1]">Color: Brown</p>
+                    <p className="text-sm text-[#A1A8C1]">Size: XL</p>
+                  </div>
+                </div>
+                <p className="text-sm md:text-base lg:text-lg font-semibold">
+                  $32.00
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Totals Section */}
+          <div className="w-full bg-[#F4F4FC] p-6 md:p-8 lg:p-12 rounded-lg shadow-md mt-8">
+            <div className="space-y-4">
+              <div className="flex justify-between">
+                <span className="text-[#1D3178] font-lato">Subtotals:</span>
+                <span className="text-[#15245E]">£219.00</span>
+              </div>
+              <div className="border-t border-[#E5E7EB] mt-2"></div>
+              <div className="flex justify-between">
+                <span className="text-[#1D3178] font-lato">Totals:</span>
+                <span className="text-[#15245E]">£325.00</span>
+              </div>
+              <div className="border-t border-[#E5E7EB] mt-2"></div>
+              <div className="flex items-center justify-between text-sm md:text-base lg:text-lg text-[#8A91AB]">
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                <p className="ml-2">Shipping & taxes calculated at checkout</p>
+              </div>
+            </div>
+            <button className="bg-[#19D16F] font-lato mt-6 text-white py-2 px-4 rounded-md hover:bg-[#0d660b] transition w-full text-sm md:text-base lg:text-lg">
+              Proceed To Checkout
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
