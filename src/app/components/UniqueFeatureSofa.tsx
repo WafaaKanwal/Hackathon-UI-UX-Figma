@@ -16,7 +16,7 @@ const UniqueFeatureSofa = () => {
               alt="Circle 2"
               width={500}
               height={500}
-              className="absolute w-[300px] h-[300px] ml-[-15px] top-[-40px] 2xl:w-[500px] 2xl:h-[450px] mt-8 2xl:mt-0 2xl:ml-[-1.5rem]"
+              className="absolute w-[300px] h-[300px] ml-[-15px] top-[-40px] 2xl:w-[500px] 2xl:h-[450px] mt-8 2xl:mt-11 2xl:ml-[-1.5rem]"
             />
             {/* Sofa Image */}
             <Image
