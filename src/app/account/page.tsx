@@ -3,32 +3,32 @@ import Image from "next/image";
 export default function MyAccount() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Rectangle Section */}
-      <div className="absolute mt-[1px] left-0 w-full h-[200px] bg-[#F6F5FF]">
-        <h1
-          className="text-[#151875] font-bold ml-[287px] mt-[67px] font-"
-          style={{
-            fontSize: "36px",
-            lineHeight: "25.78px",
-          }}
-        >
-          My Account
-        </h1>
-        <p
-          className="mt-5 ml-[286px]"
-          style={{
-            fontSize: "16px",
-            fontWeight: 500,
-            lineHeight: "14.4px",
-            color: "black",
-          }}
-        >
-          Home . Pages <span className="text-[#FB2E86]">. My Account</span>
-        </p>
-      </div>
+    {/* Rectangle Section */}
+    <div className="absolute  mt-[120px] top-0 left-0 w-full h-[200px] bg-[#F6F5FF] flex flex-col items-center md:items-start md:pl-[287px] s">
+      <h1
+        className="text-[#151875] font-bold mt-[67px]"
+        style={{
+          fontSize: "36px",
+          lineHeight: "25.78px",
+        }}
+      >
+        My Account
+      </h1>
+      <p
+        className="mt-5"
+        style={{
+          fontSize: "16px",
+          fontWeight: 500,
+          lineHeight: "14.4px",
+          color: "black",
+        }}
+      >
+        Home . Pages <span className="text-[#FB2E86]">. My Account</span>
+      </p>
+    </div>
 
       {/* Main Section */}
-      <main className="container mx-auto px-4 flex flex-col items-center ">
+      <main className="container mx-auto px-4 flex flex-col items-center">
         <div className="bg-white shadow-md rounded-lg p-8 max-w-md w-full mt-[300px]">
           <h2 className="text-[32px] font-bold text-center text-gray-800">
             Login
@@ -75,7 +75,7 @@ export default function MyAccount() {
         </div>
 
         {/* Footer Logos */}
-        <div className=" justify-center  mt-[90px]">
+        <div className="flex justify-center mt-[90px]">
           <Image
             src={"/images/image 1174.png"}
             alt="brands"
